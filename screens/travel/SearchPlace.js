@@ -67,7 +67,7 @@ export default function SearchPlaceView() {
         </View>
           
         <ScrollView
-          // keyboardShouldPersistTaps="handled"
+          keyboardShouldPersistTaps="handled"
         >
           <View>
             <Text style={styles.listTitle}>이런 곳은 어떠세요?</Text>
