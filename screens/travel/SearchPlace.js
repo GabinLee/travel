@@ -67,7 +67,7 @@ export default function SearchPlaceView() {
         </View>
           
         <ScrollView
-          keyboardShouldPersistTaps="handled"
+          // keyboardShouldPersistTaps="handled"
         >
           <View>
             <Text style={styles.listTitle}>이런 곳은 어떠세요?</Text>
@@ -99,13 +99,13 @@ export default function SearchPlaceView() {
         
         <View style={styles.buttonGroup}>
           <TouchableOpacity
-            style={{...styles.buttonSearchType, backgroundColor: searchType === "place" ? "rgb(16, 185, 129)" : ""}}
+            style={{...styles.buttonSearchType, backgroundColor: searchType === "place" ? "rgb(16, 185, 129)" : "transparent"}}
             onPress={() => setSearchType("place")}
           >
             <Text style={{color: searchType === "place" ? "#fff" : ""}}>장소로 찾기</Text>
           </TouchableOpacity>
           <TouchableOpacity
-            style={{...styles.buttonSearchType, backgroundColor: searchType === "theme" ? "rgb(16, 185, 129)" : ""}}
+            style={{...styles.buttonSearchType, backgroundColor: searchType === "theme" ? "rgb(16, 185, 129)" : "transparent"}}
             onPress={() => setSearchType("theme")}
           >
             <Text style={{color: searchType === "theme" ? "#fff" : ""}}>테마로 찾기</Text>
